@@ -54,3 +54,13 @@ const add = (a: number, b: number, c?: number | string) => {
 };
 
 add(5, 20);
+
+type StringOrNum = string | number;
+type objWithName = { name: string; uid: StringOrNum };
+
+const greetAgain = (user: { name: string; uid: StringOrNum }) => {
+  console.log(`${user.name} says hello`);
+};
+const greetAgain1 = (user: objWithName) => {
+  console.log(`${user.name} says hello`);
+};
