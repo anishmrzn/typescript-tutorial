@@ -64,3 +64,4 @@ const greetAgain = (user: { name: string; uid: StringOrNum }) => {
 const greetAgain1 = (user: objWithName) => {
   console.log(`${user.name} says hello`);
 };
+
